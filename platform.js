@@ -74,6 +74,9 @@ Platform.init = function () {
             case 'close':
                 this.emit(type);
                 break;
+            case 'sync':
+                this.emit(type, m.data.last_sync_dt);
+                break;
             default:
                 this.emit(type, m.data);
         }

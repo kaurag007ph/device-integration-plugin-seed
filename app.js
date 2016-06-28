@@ -13,7 +13,7 @@ platform.on('sync', function (lastSyncDate) {
     /* Sample Code:
     *    client.fetchData({updated_since: lastSyncDate}, function (error, dataCollection) {
     *        dataCollection.forEach(function (data) {
-    *            platform.upsertDevice(data);
+    *            platform.syncDevice(data);
     *        });
     *    });
     */

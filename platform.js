@@ -88,7 +88,7 @@ Platform.init = function () {
  * @param {object} [device] Device metadata.
  * @param {function} [callback] Optional callback to be called once the signal has been sent.
  */
-Platform.prototype.upsertDevice = function(device, callback) {
+Platform.prototype.syncDevice = function(device, callback) {
     callback = callback || function () {};
 
     setImmediate(() => {
